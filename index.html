@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тест для Хади</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="welcome">
+      <h1>Привет, Хади!</h1>
+      <p>Давай сыграем в маленькую игру ❤️</p>
+    </header>
+
+    <main>
+      <div id="quiz">
+        <!-- Вопрос 1 -->
+        <div class="question" id="question-1">
+          <p>Где тут Менди?</p>
+          <div class="options">
+            <img src="https://brawlstarsup.com/wp-content/uploads/2023/01/mandy.jpg" onclick="checkAnswer(this, true)">
+            <img src="https://brawlstarsguide.com/images/shelly.jpg" onclick="checkAnswer(this, false)">
+            <img src="https://brawlstarsguide.com/images/colt.jpg" onclick="checkAnswer(this, false)">
+            <img src="https://brawlstarsguide.com/images/nita.jpg" onclick="checkAnswer(this, false)">
+          </div>
+        </div>
+
+        <!-- Вопрос 2 -->
+        <div class="question" id="question-2">
+          <p>Где тут котик?</p>
+          <div class="options">
+            <img src="https://placekitten.com/200/200" onclick="checkAnswer(this, true)">
+            <img src="https://placedog.net/200/200" onclick="checkAnswer(this, false)">
+            <img src="https://pixabay.com/get/g9cbdf5f9d65acde53a38941bc9c5c1c445d274f7cf3f36d161a113b0e393a8437c846ec55b72c4e0b511166d94243e23c8b4a8625fd3fb9cbb1f46f09b051f5b_640.jpg" onclick="checkAnswer(this, false)">
+            <img src="https://pixabay.com/get/g6bc3d763d9f8f4b4f54109a7b9b2e2ca4f6adffbc9d3fd7486395933c6b715bb8edaa4be3da3b6d4f5ab451c402ca5eec11eb601f6d3c29a5470b1d85b1a1516_640.jpg" onclick="checkAnswer(this, false)">
+          </div>
+        </div>
+
+        <!-- Вопрос 3 -->
+        <div class="question" id="question-3">
+          <p>Где тут Майот?</p>
+          <div class="options">
+            <img src="https://avatars.yandex.net/get-music-user-playlist/1415536/3339650.jpg" onclick="checkAnswer(this, true)">
+            <img src="https://sun1-30.userapi.com/impg/7DzeJdYmQUSzPtMzkWA8H9oSlEF-kTH_k6PVjRGie1Dhy_tVvIFKmV51a3BlduhMSJsk.jpg" onclick="checkAnswer(this, false)">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/OG_Buda_2021.jpg/220px-OG_Buda_2021.jpg" onclick="checkAnswer(this, false)">
+            <img src="https://avatars.yandex.net/get-music-user-playlist/2508760/2826442.jpg" onclick="checkAnswer(this, false)">
+          </div>
+        </div>
+
+        <!-- Вопрос 4 -->
+        <div class="question" id="question-4">
+          <p>Где тут волейбол?</p>
+          <div class="options">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Volleyball_-_cropped.jpg/800px-Volleyball_-_cropped.jpg" onclick="checkAnswer(this, true)">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Football_in_France_%28cropped%29.jpg/800px-Football_in_France_%28cropped%29.jpg" onclick="checkAnswer(this, false)">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Basketball_%28cropped%29.jpg/800px-Basketball_%28cropped%29.jpg" onclick="checkAnswer(this, false)">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Table_Tennis_Players_%28cropped%29.jpg/800px-Table_Tennis_Players_%28cropped%29.jpg" onclick="checkAnswer(this, false)">
+          </div>
+        </div>
+
+        <div id="result" style="display:none;">
+          <p>Вот эти все правильные ответы ассоциируются у меня с тобой. Мне нравятся твои вкусы, и я уважаю их, как и тебя саму. Люблю тебя, котёночек мой ❤️</p>
+          <div class="final-images">
+            <img src="https://brawlstarsup.com/wp-content/uploads/2023/01/mandy.jpg">
+            <img src="https://placekitten.com/200/200">
+            <img src="https://avatars.yandex.net/get-music-user-playlist/1415536/3339650.jpg">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Volleyball_-_cropped.jpg/800px-Volleyball_-_cropped.jpg">
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
